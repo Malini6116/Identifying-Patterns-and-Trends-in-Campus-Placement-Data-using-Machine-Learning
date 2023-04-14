@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Placement Prediction</title>
+  </head>
+  <style>
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      padding: 20px;
+    }
+    
+    form input {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 70%;
+    }
+    
+    form select {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    
+    form button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    
+    @media (max-width: 768px) {
+      form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      form input, form select, form textarea {
+        width: 100%;
+      }
+      
+      form button[type="submit"] {
+        width: 100%;
+      }
+    }
+
+    h1{
+        color: #007bff;
+    }
+  </style>
+
+  </style>
+  <body>
+    <center>
+        <h1>FILL THE DETAILS</h1>
+        <form action="/y_predict" method="post" class="card">
+          <label for="sen1">Sentence 1:</label>
+          <input type="number" id="sen1" name="sen1" placeholder="Age"><br><br>
+          <label for="sen2">Sentence 2:</label>
+          <input type="number" id="sen2" name="sen2" placeholder="Gender M(0),F(1)"><br><br>
+          <label for="sen3">Sentence 3:</label>
+          <input type="number" id="sen3" name="sen3" placeholder="Stream cs(0),IT(1),ECE(2),Mech(3),EEE(4),Civil(5)"><br><br>
+          <label for="sen4">Sentence 4:</label>
+          <input type="number" id="sen4" name="sen4" placeholder="Internships"><br><br>
+          <label for="sen5">Sentence 5:</label>
+          <input type="number" id="sen5" name="sen5" placeholder="Cgpa"><br><br>
+          <label for="sen6">Sentence 6:</label>
+          <input type="number" id="sen6" name="sen6" placeholder="number of backlogs"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+    </center>
+   
+  </body>
+</html>
